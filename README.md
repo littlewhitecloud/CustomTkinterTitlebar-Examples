@@ -1,6 +1,9 @@
 # 📖CustomTkinterTitlebar-Examples
 📚 这里有一些关于CustomTkinterTitlebar的例子 (There are some examples for CustomTkinterTitlebar).
 
+### 📚 维基 (wiki):
+https://github.com/littlewhitecloud/CustomTkinterTitlebar/wiki/Script
+
 ### 输入框 (Entry):
 #### 这个样例是用来展示输入框可以包括多选项卡 (This example is to show titlebar can include widget : entry)
 
