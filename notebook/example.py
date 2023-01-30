@@ -20,7 +20,7 @@ ex.useicon(False)
 ex.usetitle(False)
 ex.geometry(975, 525)
 ex.titlebar["height"] = 40
-if isDark():
+if not isDark():
 	ex.bg = "#2f2f2f"
 	ex.titlebar["background"] = "#2f2f2f"
 	ex._titleexit["background"] = "#2f2f2f"
@@ -33,7 +33,9 @@ else:
 	ex._titleexit["background"] = "#e7e7e7"
 	ex._titlemin["background"] = "#e7e7e7"
 	ex._titlemax["background"] = "#e7e7e7"
+	ex["background"] = "#ffffff"
 	set_theme("light")
+	
 newtab_load = Image.open("newtab.png")
 newtab_png = ImageTk.PhotoImage(newtab_load)
 newtab = Button(ex.titlebar, image = newtab_png, command = newtab, relief = FLAT, bg = ex.bg)
