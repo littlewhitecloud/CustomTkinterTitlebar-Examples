@@ -18,9 +18,9 @@ def newtab():
 ex = CTT()
 ex.useicon(False)
 ex.usetitle(False)
-ex.geometry(975, 525)
+ex.geometry("975x525")
 ex.titlebar["height"] = 40
-if not isDark():
+if isDark():
 	ex.bg = "#2f2f2f"
 	ex.titlebar["background"] = "#2f2f2f"
 	ex._titleexit["background"] = "#2f2f2f"

@@ -1,5 +1,5 @@
 """ Test all window effect """
-from custom import CTT
+from CustomTkinterTitlebar import CTT
 from tkinter.ttk import Radiobutton, Entry
 from sv_ttk import set_theme
 
