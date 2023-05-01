@@ -1,6 +1,6 @@
-from tkinter.ttk import Notebook
+from tkinter.ttk import Notebook, Button
 from tkinter.messagebox import showerror
-from CustomTkinterTitlebar import CTT, getcwd, Image, ImageTk, Button, Frame, FLAT, LEFT, X, Y, TOP
+from CustomTkinterTitlebar import CTT, getcwd, Image, ImageTk, Frame, FLAT, LEFT, X, Y, TOP
 from sv_ttk import set_theme
 from darkdetect import isDark
 
@@ -10,7 +10,7 @@ def newtab():
 	if value == 11:
 		showerror("Error", "Sorry, you had reached the limit")
 	else:
-		newframe = Frame(nb, bg= "#114514")
+		newframe = Frame(nb, bg= "#000000")
 		newframe.pack(fill = X, side = TOP)
 		nb.add(newframe, text = "Tab %d" % value)
 		value += 1
@@ -38,7 +38,7 @@ else:
 	
 newtab_load = Image.open("newtab.png")
 newtab_png = ImageTk.PhotoImage(newtab_load)
-newtab = Button(ex.titlebar, image = newtab_png, command = newtab, relief = FLAT, bg = ex.bg)
+newtab = Button(ex.titlebar, image = newtab_png, command = newtab)
 nb = Notebook(ex.titlebar)
 nb.pack(side = LEFT, fill = X)
 nb.bind("<ButtonPress-1>", ex.dragging)
